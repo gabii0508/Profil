@@ -8,7 +8,7 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
     --gradient-start: #FF6EB1;
     --gradient-end: #FF1493;
-    --font-family-base: 'Arial', sans-serif;
+    --font-family-base: 'Dancing Script', cursive;
     --font-family-special: 'Roboto', sans-serif;
     --link-color: #92156f;
 }
@@ -32,26 +32,26 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    min-height: 100vh; 
+    min-height: 100vh;
     overflow-y: auto;
 }
 
 header {
     background: transparent;
     color: white;
-    padding: 8px 15px; 
+    padding: 8px 15px;
     width: 100%;
     box-sizing: border-box;
-    flex-shrink: 0;  
+    flex-shrink: 0;
 }
 
 header h1 {
     font-family: var(--font-family-special);
     margin: 0;
-    font-size: 1.8em;  
+    font-size: 1.8em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -68,7 +68,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--link-color);  
+    color: var(--link-color);
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -85,19 +85,18 @@ main {
     width: 100%;
     padding: 10px;
     flex-grow: 1;
-    text-align: center;
     margin-top: 0;
     overflow: hidden;
 }
 
 .profile-card {
-    background: linear-gradient(135deg, #eddcdf, #eab9d0);  
+    background: linear-gradient(135deg, #eddcdf, #eab9d0);
     border-radius: 20px;
     box-shadow: 0 4px 10px var(--shadow-color);
-    padding: 15px; 
+    padding: 15px;
     width: 80%;
-    max-width: 350px;  
-    min-height: auto; 
+    max-width: 350px;
+    min-height: auto;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 30px;
@@ -114,17 +113,16 @@ main {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 .avatar {
     border-radius: 50%;
-    width: 100px;  
-    height: 100px; 
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     margin-bottom: 15px;
     margin-top: 15px;
-    display: block;  
+    display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .profile-info {
@@ -132,14 +130,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-y: auto; 
     font-size: 0.85em;
 }
 
 .profile-info h3 {
     color: var(--primary-color);
     margin-top: 15px;
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
 
 .profile-info p {
@@ -147,25 +144,40 @@ main {
     margin-top: 15px;
 }
 
+
 .profile-info ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
+    list-style-type: none !important;  
+    padding-left: 0;
     margin-top: 5px;
 }
 
+
 .profile-info ul li {
     margin-bottom: 8px;
+    text-align: left;
+    display: flex;
+    align-items: center;  
+}
+
+
+.plat-logo,
+.hobby-logo {
+    width: 16px;  
+    height: 16px;
+    object-fit: cover;
+    margin-right: 8px;  
+    vertical-align: middle;  
+    display: inline-block;  
 }
 
 footer {
     background: transparent;
     color: var(--text-color);
-    font-size: 0.85em;  
+    font-size: 0.85em;
     font-family: var(--font-family-special);
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 8px 15px;  
+    padding: 8px 15px;
     width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
